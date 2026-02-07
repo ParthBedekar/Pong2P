@@ -34,7 +34,7 @@ void Paddle::update(float dt, float windowWidth) {
 			windowWidth - bounds.width / 2.f,
 			shape.getPosition().y
 		);
-	}
+	}	
 }
 
 void Paddle::draw(sf::RenderWindow& window) const{ 

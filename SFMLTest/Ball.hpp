@@ -5,13 +5,6 @@ enum class BallResult {
 	HitBottomWall
 };
 
-BallResult update(
-	float dt,
-	float windowWidth,
-	float windowHeight,
-	const sf::FloatRect& topPaddle,
-	const sf::FloatRect& bottomPaddle
-);
 class Ball {
 	public:
 	Ball(float x,float y);

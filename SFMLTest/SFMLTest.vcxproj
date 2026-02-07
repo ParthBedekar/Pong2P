@@ -136,14 +136,18 @@ $(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
   <ItemGroup>
     <ClCompile Include="Ball.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Paddle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ball.hpp" />
+    <ClInclude Include="Menu.hpp" />
     <ClInclude Include="Paddle.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="C:\Users\Parth\Downloads\paddle.png" />
+    <Image Include="C:\Users\Parth\Downloads\paddle.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </Image>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

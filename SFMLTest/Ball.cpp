@@ -8,7 +8,7 @@ Ball::Ball(float x, float y) {
     shape.setPosition(x, y);
     shape.setFillColor(sf::Color::White);
 
-    speed = 260.f;
+    speed = 120.f;
 
     // initialize velocity ONCE
     velocity.x = (rand() % 2 == 0 ? -1.f : 1.f) * speed;
